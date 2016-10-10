@@ -1,0 +1,22 @@
+# EMBEDDED SERVER CONFIGURATION
+server:
+  port: ${port:8761}
+  error.whitelabel.enabled: false
+
+# EUREKA
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
+# LOGGING
+#logging.level.org.springframework.security: DEBUG
+
+# EUREKA
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+
