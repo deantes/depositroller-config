@@ -12,19 +12,19 @@ eureka:
     waitTimeInMsWhenSyncEmpty: 0
 spring:
   datasource:
-    url: ${app.datasource.url}
+    url: jdbc:mysql://swiftleap-mysql/swiftleap
     username: swiftleap
     password: swiftleap
     driver-class-name: com.mysql.jdbc.Driver
 logging:
   level:
-    root: ${app.root.logLevel}
-    org.springframework.web: ${app.springframework.web.logLevel}
-    org.hibernate: ${app.hibernate.logLevel}
+    root: WARN
+    org.springframework.web: WARN
+    org.hibernate: ERROR
 flyway:
   baselineOnMigrate: true
 amazon:
-  dynamodb.endpoint: ${app.dynamodb.endpoint}
+  dynamodb.endpoint: http://dynamodb-local:8000
   aws:
-    accesskey: ${app.aws.accesskey}
-    secretkey: ${app.aws.secretkey}
+    accesskey: notcheckedlocallybutmustbeprovided
+    secretkey: notcheckedlocallybutmustbeprovided
