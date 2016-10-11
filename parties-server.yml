@@ -1,0 +1,30 @@
+server:
+  port: ${port:8081}
+  error.whitelabel.enabled: false
+
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://eureka-server:8761/eureka/
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
+spring:
+  datasource:
+    url: ${app.datasource.url}
+    username: swiftleap
+    password: swiftleap
+    driver-class-name: com.mysql.jdbc.Driver
+logging:
+  level:
+    root: ${app.root.logLevel}
+    org.springframework.web: ${app.springframework.web.logLevel}
+    org.hibernate: ${app.hibernate.logLevel}
+flyway:
+  baselineOnMigrate: true
+amazon:
+  dynamodb.endpoint: ${app.dynamodb.endpoint}
+  aws:
+    accesskey: ${app.aws.accesskey}
+    secretkey: ${app.aws.secretkey}
