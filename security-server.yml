@@ -30,7 +30,7 @@ logging:
             springframework:
                 web: WARN
         root: WARN
-flyway:
-    baselineOnMigrate: true
+#flyway:
+#    baselineOnMigrate: true
 
 
