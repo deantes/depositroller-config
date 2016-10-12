@@ -16,3 +16,18 @@ spring:
         password: swiftleap
         url: jdbc:mysql://swiftleap-mysql/swiftleap
         username: swiftleap
+    mail:
+        host: smtp.gmail.com
+        password: sdasd
+        port: 587
+        properties:
+            mail:
+                smtp:
+                    auth: true
+                    ssl:
+                        trust: smtp.gmail.com
+                    starttls:
+                        enable: true
+        protocol: smtp
+        tls: true
+        username: asdas@gmail.com
