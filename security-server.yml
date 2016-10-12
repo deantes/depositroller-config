@@ -14,7 +14,7 @@ spring:
     datasource:
         driver-class-name: com.mysql.jdbc.Driver
         password: swiftleap
-        url: jdbc:mysql://localhost/swiftleap
+        url: jdbc:mysql://swiftleap-mysql/swiftleap
         username: swiftleap
     social:
         facebook:
@@ -27,9 +27,9 @@ spring:
 #    level:
 #        org:
 #            hibernate: ERROR
-##            springframework:
-##                web: IN
-#        root: WARN
+#            springframework:
+#                web: INFO
+#        root: INFO
 #flyway:
 #    baselineOnMigrate: true
 

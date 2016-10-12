@@ -16,11 +16,11 @@ spring:
     username: swiftleap
     password: swiftleap
     driver-class-name: com.mysql.jdbc.Driver
-logging:
-  level:
-    root: WARN
-    org.springframework.web: WARN
-    org.hibernate: ERROR
+#logging:
+#  level:
+#    root: WARN
+#    org.springframework.web: WARN
+#    org.hibernate: ERROR
 flyway:
   baselineOnMigrate: true
 amazon:
