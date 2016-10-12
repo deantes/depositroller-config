@@ -10,23 +10,23 @@ eureka:
       defaultZone: http://eureka-server:8761/eureka/
   server:
     waitTimeInMsWhenSyncEmpty: 0
-spring:
-  datasource:
-    url: jdbc:mysql://localhost/swiftleap
-    username: swiftleap
-    password: swiftleap
-    driver-class-name: com.mysql.jdbc.Driver
-  social:
-    facebook:
-      clientId: 1307552222602859
-      clientSecret: 004e35ef68894981197d2297e7639870
-    google:
-      clientId: xx
-      clientSecret: xx
-logging:
-  level:
-    root: WARN
-    org.springframework.web: WARN
-    org.hibernate: ERROR
-flyway:
-  baselineOnMigrate: true
+#spring:
+#  datasource:
+#    url: jdbc:mysql://localhost/swiftleap
+#    username: swiftleap
+#    password: swiftleap
+#    driver-class-name: com.mysql.jdbc.Driver
+#  social:
+#    facebook:
+#      clientId: 1307552222602859
+#      clientSecret: 004e35ef68894981197d2297e7639870
+#    google:
+#      clientId: xx
+#      clientSecret: xx
+#logging:
+#  level:
+#    root: WARN
+#    org.springframework.web: WARN
+#    org.hibernate: ERROR
+#flyway:
+#  baselineOnMigrate: true
