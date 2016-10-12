@@ -1,5 +1,5 @@
 server:
-    port: ${port:8082}
+    port: ${port:8083}
     error.whitelabel.enabled: false
 
 eureka:
@@ -16,12 +16,3 @@ spring:
         password: swiftleap
         url: jdbc:mysql://swiftleap-mysql/swiftleap
         username: swiftleap
-    social:
-        facebook:
-            clientId: 1307552222602859
-            clientSecret: 004e35ef68894981197d2297e7639870
-        google:
-            clientId: xx
-            clientSecret: xx
-
-
