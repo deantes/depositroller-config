@@ -23,13 +23,13 @@ spring:
         google:
             clientId: xx
             clientSecret: xx
-logging:
-    level:
-        org:
-            hibernate: ERROR
-            springframework:
-                web: WARN
-        root: WARN
+#logging:
+#    level:
+#        org:
+#            hibernate: ERROR
+##            springframework:
+##                web: IN
+#        root: WARN
 #flyway:
 #    baselineOnMigrate: true
 
