@@ -12,7 +12,7 @@ eureka:
     waitTimeInMsWhenSyncEmpty: 0
 spring:
   datasource:
-    url: jdbc:mysql://swiftleap-mysql/swiftleap
+    url: jdbc:mysql://localhost/swiftleap
     username: swiftleap
     password: swiftleap
     driver-class-name: com.mysql.jdbc.Driver
